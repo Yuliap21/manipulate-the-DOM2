@@ -8,41 +8,37 @@ let quotes = [
 ];
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  // Random quote of the day generator
-  const randomQuote = function() {
-    document.querySelector('#quote-of-the-day').textContent = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
-  };
-  randomQuote();
-  
-  // Do all of your work inside the document.addEventListener  
-
   // Part 1
-
+function shortenTitle(){
+  const mainTitle = document.querySelector('#main-title');
+  mainTitle.innerHTML = ('I am Dom. This is my website');
+}
 
   // Part 2
-
+function bgColor(){
+  const body = document.querySelector('body');
+  body.style.backgroundColor = 'pink';
+}
 
   // Part 3
+function removeListItem(){
+  let list = document.getElementById('favorite-things');
+  list.removeChild(list.lastElementChild);
+}
 
 
   // Part 4
+function sizeChange(){
+  const speacial
+}
 
+.special-title{
+  font-size: 2rem;
+}
+  // Random quote of the day generator
+  const randomQuote = function() {
+    document.querySelector('#quote-of-the-day').textContent = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
 
-  // Part 5
-
-
-  // Part 6
-
-
-  // Part 7
-
-
-  // Part 8
-
-
-  // Part 9
-
-
-
-
+    }
+  randomQuote();
 });
