@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Part 1
 function shortenTitle(){
   const mainTitle = document.querySelector('#main-title');
-  mainTitle.innerHTML = ('I am Dom. This is my website');
+  mainTitle.textContent = ('I am Dom. This is my website');
 }
 
   // Part 2
-function bgColor(){
+function changeBackground(){
   const body = document.querySelector('body');
-  body.style.backgroundColor = 'pink';
+  body.style.backgroundColor = 'green';
 }
 
   // Part 3
